@@ -11,14 +11,15 @@ public class Main
         String p = s.nextLine();
         System.out.println("What is your stores name?");
         String sName = s.nextLine();
-        System.out.println("What is your total inventory?");
-        int inv = s.nextInt();
         System.out.println("What is the price of a bagel?");
         int price = s.nextInt();
 
 
 
-        BankApp app = new BankApp(n,p,sName,inv,price);
+        BankApp app = new BankApp(n,p,sName,price);
+        app.menu();
+        app.payment();
+
         // call methods from your BankApp object to handle program logic
     }
 }
